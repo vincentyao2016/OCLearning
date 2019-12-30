@@ -23,14 +23,18 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    NSURL* url = [NSURL URLWithString:@"https://itunes.apple.com/fr/app/pokerstars-poker-en-ligne/id509469724?ign-mpt=uo%3D5"];
+    NSLog(@"____sURL IS : %@",url);
+    
+    
 }
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
+        NSLog(@"Unit Test");
     }];
 }
 

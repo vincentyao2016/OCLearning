@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /*
+     Make sure disable Main storyboard file name from plist first
+     Name a viewcontroller as root viewcontroller
+     This part help you understand what is the root viewcontroller
+     */
+    // Instance a viewcontroller
+    ViewController *vc = [[ViewController alloc] init];
+    // Init a window and
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    // set root ViewContorller
+    self.window.rootViewController = vc;
+    // Make the window visible
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

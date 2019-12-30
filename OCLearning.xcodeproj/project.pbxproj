@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4B0D6C23B35BC800B16BB1 /* VCOpenStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4B0D6B23B35BC800B16BB1 /* VCOpenStoreKit.m */; };
 		BFE656C62216A2690054CF3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE656C52216A2690054CF3B /* AppDelegate.m */; };
 		BFE656C92216A2690054CF3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE656C82216A2690054CF3B /* ViewController.m */; };
 		BFE656CC2216A2690054CF3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE656CA2216A2690054CF3B /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF4B0D6A23B35BC800B16BB1 /* VCOpenStoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCOpenStoreKit.h; sourceTree = "<group>"; };
+		BF4B0D6B23B35BC800B16BB1 /* VCOpenStoreKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCOpenStoreKit.m; sourceTree = "<group>"; };
 		BFE656C12216A2690054CF3B /* OCLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE656C42216A2690054CF3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFE656C52216A2690054CF3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF4B0D6923B35BA000B16BB1 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B0D6A23B35BC800B16BB1 /* VCOpenStoreKit.h */,
+				BF4B0D6B23B35BC800B16BB1 /* VCOpenStoreKit.m */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
 		BFE656B82216A2690054CF3B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		BFE656C32216A2690054CF3B /* OCLearning */ = {
 			isa = PBXGroup;
 			children = (
+				BF4B0D6923B35BA000B16BB1 /* StoreKit */,
 				BFE656C42216A2690054CF3B /* AppDelegate.h */,
 				BFE656C52216A2690054CF3B /* AppDelegate.m */,
 				BFE656C72216A2690054CF3B /* ViewController.h */,
@@ -202,7 +215,6 @@
 					};
 					BFE656D82216A26B0054CF3B = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = BFE656C02216A2690054CF3B;
 					};
 					BFE656E32216A26B0054CF3B = {
 						CreatedOnToolsVersion = 10.1;
@@ -265,6 +277,7 @@
 				BFE656C92216A2690054CF3B /* ViewController.m in Sources */,
 				BFE656D42216A26A0054CF3B /* main.m in Sources */,
 				BFE656C62216A2690054CF3B /* AppDelegate.m in Sources */,
+				BF4B0D6C23B35BC800B16BB1 /* VCOpenStoreKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3BCKJK2U;
 				INFOPLIST_FILE = OCLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQ3BCKJK2U;
 				INFOPLIST_FILE = OCLearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,7 +481,6 @@
 		BFE656F12216A26B0054CF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCLearningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,14 +491,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.OCLearningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCLearning.app/OCLearning";
 			};
 			name = Debug;
 		};
 		BFE656F22216A26B0054CF3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCLearningTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,7 +507,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vincent.OCLearningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCLearning.app/OCLearning";
 			};
 			name = Release;
 		};
